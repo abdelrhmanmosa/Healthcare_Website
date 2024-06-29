@@ -1,0 +1,56 @@
+.card {
+  width: 200px;
+  height: 80%;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 5px 20px 0 rgba(105, 106, 152, 0.197);
+  background: url(../../images/bg1.jpg) no-repeat center;
+  background-size: cover;
+  margin: 10px;
+  border: none;
+}
+.card .btn {
+  width: fit-content;
+  color: var(--TextBlue);
+  background-color: #cdcd;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.5s;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.card:hover .btn{
+  background-color: var(--TextBlue);
+  color: white;
+}
+.card h3 {
+  color: var(--TextBlue);
+  font-weight: 600;
+  font-size: 25px;
+}
+.card p {
+  font-size: 12px;
+}
+.card .bis {
+  width:75px;
+  height: 75px;
+  font-size: 30px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  margin: 15px 0;
+  color: var(--TextBlue);
+  position: relative;
+}
+.card .bis #icon{
+  position: absolute; 
+  top: 20%;
+  right: 30%;
+}
+.card:hover #icon {   
+  animation: vibration 0.1s 3 linear;
+}
+
+
+
+

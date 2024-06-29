@@ -1,0 +1,210 @@
+.Testimonial {
+  margin: 50px 0;
+  text-align: center;
+}
+.Testimonial p {
+  color: var(--orangeColor);
+  font-weight: 600;
+  background-image: url(../../images/bg-p.png);
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 15px auto;
+}
+.Testimonial h2 {
+  color: var(--TextBlue);
+  font-weight: 600;
+  margin: 5px auto;
+}
+.Testimonial .content {
+  height: 90vh;
+}
+@media (max-width: 992px) {
+  .Testimonial .content {
+    margin: 50px 0;
+  }
+}
+@media (max-width: 376px) {
+  .Testimonial .content {
+    height: 120vh;
+  }
+}
+.Testimonial .content .contentQuote {
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .Testimonial .content .contentQuote {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.carousel-inner {
+  padding-top: 30px;
+}
+.Testimonial .contentQuote {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 650px;
+}
+
+.Testimonial .mainQuote .blockQuote {
+  width: 90%;
+  height: 100%;
+  background-color: var(--orangeColor);
+  margin: 0 20px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  color: white;
+  padding: 30px;
+  margin-right: 0;
+  text-align: start;
+}
+
+.Testimonial .mainQuote .blockQuote p {
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.8;
+}
+.Testimonial .mainQuote .blockQuote h5,
+.Testimonial .mainQuote .blockQuote h6 {
+  margin-left: 20px;
+}
+.carousel-indicators {
+  display: none;
+}
+
+.Testimonial .contentQuote .carousel-control-next,
+.Testimonial .contentQuote .carousel-control-prev {
+  position: absolute;
+  top: 105%;
+  width: fit-content;
+  padding: 28px 12px;
+  opacity: 1;
+  text-align: center;
+  background-color: var(--orangeColor);
+  border: none;
+}
+.Testimonial .contentQuote .carousel-control-next {
+  right: 65%;
+}
+.Testimonial .contentQuote .carousel-control-prev {
+  left: 8%;
+}
+@media (max-width: 376px) {
+  .Testimonial .contentQuote .carousel-control-next {
+    right: 60%;
+  }
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.Testimonial .mainQuote .up {
+  position: absolute;
+  left: 80px;
+  top: -50px;
+  font-size: 60px;
+  color: var(--orangeColor);
+  background-color: white;
+  padding: 1px 8px;
+  border-radius: 15px;
+}
+.Testimonial .mainQuote .blockQuote .down {
+  position: absolute;
+  transform: rotate(180deg);
+  bottom: -20px;
+  right: 60px;
+  font-size: 80px;
+  color: #fba472;
+}
+
+.Testimonial .content .blockPics {
+  position: relative;
+  display: inline-block;
+}
+
+.Testimonial .content .blockPics .BGdoctor {
+  position: relative;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.Testimonial .content .blockPics ul {
+  margin: 0;
+  padding: 0;
+}
+.Testimonial .content .blockPics ul li {
+  list-style: none;
+  position: absolute;
+  padding: 0;
+}
+
+.Testimonial .content .blockPics ul li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.Testimonial .content .blockPics ul li:first-child {
+  top: 100px;
+  right: 20px;
+}
+.Testimonial .content .blockPics ul li:nth-child(2) {
+  bottom: 90px;
+  right: 20px;
+}
+.Testimonial .content .blockPics ul li:nth-child(3) {
+  bottom: 0px;
+  right: 200px;
+}
+.Testimonial .content .blockPics ul li:nth-child(4) {
+  bottom: 90px;
+  left: 30px;
+}
+.Testimonial .content .blockPics ul li:nth-child(5) {
+  top: 95px;
+  left: 20px;
+}
+.Testimonial .content .blockPics ul li:nth-child(6) {
+  top: 0px;
+  right: 200px;
+}
+
+@media (max-width: 420px) {
+  .Testimonial .content .blockPics ul li:first-child {
+    top: 60px;
+    right: 10px;
+  }
+  .Testimonial .content .blockPics ul li:nth-child(2) {
+    bottom: 50px;
+    right: 20px;
+  }
+  .Testimonial .content .blockPics ul li:nth-child(3) {
+    bottom: 0px;
+    right: 120px;
+  }
+  .Testimonial .content .blockPics ul li:nth-child(4) {
+    bottom: 50px;
+    left: 10px;
+  }
+  .Testimonial .content .blockPics ul li:nth-child(5) {
+    top: 45px;
+    left: 20px;
+  }
+  .Testimonial .content .blockPics ul li:nth-child(6) {
+    top: 0px;
+    right: 120px;
+  }
+}

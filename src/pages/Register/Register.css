@@ -1,0 +1,36 @@
+.Register-Login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #b1b1b142;
+}
+.Register-Login .cardLogin {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: white;
+  width: 400px;
+  border-radius: 30px;
+}
+.Register-Login .cardLogin img {
+  margin-bottom: 10px;
+}
+.Register-Login .cardLogin input {
+  width: 100%;
+  height: 50px;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #bbbbbb;
+  border-radius: 10px;
+}
+.Register-Login .cardLogin .btn{
+  width: 100%;
+  margin: 8px 0;
+}
+.login{
+    background-color: var(--orangeColor);
+    border: none;
+}

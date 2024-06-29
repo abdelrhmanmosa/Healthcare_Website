@@ -1,0 +1,237 @@
+/* start About Us **********************/
+.About_us {
+    padding: 80px 0;
+    position: relative;
+    z-index: 0;
+  }
+  @media (max-width: 768px) {
+    .About_us {
+      padding: 0px;
+    }
+  }
+  @media (max-width: 420px) {
+    .About_us {
+      padding: 80px 0;
+    }
+  }
+  .About {
+    display: flex;
+    gap: 20px;
+  }
+  .About .shape {
+    position: relative;
+    width: 50%;
+  }
+  .About .shape::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--orangeColor);
+    border-radius: 15px;
+    transform: rotate(45deg);
+  }
+  .About .pic1 {
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+  .About .pic2 {
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    width: 300px;
+  }
+  .About .pic3 {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    justify-content: end;
+  }
+  .About .pic1_pic2 {
+    align-items: end;
+    gap: 30px;
+  }
+  .About .pic3_pic4 {
+    align-items: start;
+    margin-top: 25px;
+    gap: 15px;
+  }
+  @media (max-width: 420px) {
+    .About .pic1_pic2,
+    .About .pic3_pic4 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .About .number {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--btnColor);
+    border: 1px solid var(--btnColor);
+    margin-top: 20px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    width: fit-content;
+    padding: 30px 30px;
+    margin-left: 30px;
+    background-color: transparent;
+  }
+  .About .number::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -10px;
+    background-color: #565acf23;
+    width: 220px;
+    height: 225px;
+    margin-top: 20px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    z-index: -3;
+  }
+  .About .number h1 {
+    font-weight: 900;
+    font-size: 120px;
+    margin-bottom: 0;
+  }
+  .Abou .number span {
+    font-weight: bold;
+    color: var(--TextBlue);
+  }
+  .About_us .shape22 {
+    position: absolute;
+    width: 100px;
+    top: 20%;
+    left: 20px;
+    z-index: 5;
+    animation: upDown 8s infinite ease-in-out;
+    z-index: -1;
+  }
+  @media (max-width: 992px) {
+    .About_us .shape22,
+    .About_us .shape::after {
+      display: none;
+    }
+  }
+  .About .info-medical {
+    width: 50%;
+  }
+  @media (max-width: 1200px) {
+    .About .info-medical {
+      margin-left: 30px;
+    }
+  }
+  @media (max-width: 992px) {
+    .About {
+      flex-direction: column;
+    }
+    .About .shape {
+      width: 100%;
+    }
+    .About .info-medical {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+  .info-medical h5 {
+    color: var(--orangeColor);
+    background-image: url(../../images/bg-p.png);
+    width: fit-content;
+    padding: 5px 10px;
+  }
+  .info-medical h1 {
+    color: var(--TextBlue);
+    font-weight: 700;
+    margin: 20px 0;
+  }
+  .info-medical p {
+    margin: 0 20px 20px 0;
+  }
+  .info-medical .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 20px;
+    margin: 50px 0;
+  }
+  .info-medical .buttons Button {
+    border-radius: 8px;
+    padding: 0;
+    height: 60px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+  .info-medical .buttons Button p {
+    padding: 0;
+    line-height: 1;
+    text-align: start;
+    font-size: 16px;
+    color: var(--TextBlue);
+    margin: 10px;
+  }
+  .info-medical .bi {
+    margin: 10px;
+    font-size: 40px;
+  }
+  @media (max-width: 768px) {
+    .info-medical .buttons {
+      grid-template-columns: repeat(1, minmax(150px, 1fr));
+      width: 100%;
+    }
+    .info-medical {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .info-medical .btn-Help {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #a4fcc4;
+    box-shadow: 0 5px 30px 0 rgba(31, 34, 120, 0.08);
+  }
+  .info-medical .btn-Help .bi {
+    color: #a844ff;
+  }
+  .info-medical .btn-Doctor {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #b2f0fb;
+    box-shadow: 0 5px 30px 0 rgba(31, 34, 120, 0.08);
+  }
+  .info-medical .btn-Doctor .bi {
+    color: #69e9ff;
+  }
+  .info-medical .btn-cross {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ffbdbc;
+    box-shadow: 0 5px 30px 0 rgba(31, 34, 120, 0.08);
+  }
+  .info-medical .btn-cross .bi {
+    color: #f88f8e;
+  }
+  .info-medical .btn-syn {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #e2c4ff;
+    box-shadow: 0 5px 30px 0 rgba(31, 34, 120, 0.08);
+  }
+  .info-medical .btn-syn .bi {
+    color: #8e7bd2;
+  }
+  .info-medical .btn:hover .bi {
+    animation: vibration 0.1s 3 linear;
+  }
+
+  /* *****End About Us***** */

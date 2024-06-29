@@ -1,0 +1,568 @@
+/* Start main page */
+.mainPage {
+  position: relative;
+  background: url(../../images/bg1.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  padding: 80px 0;
+  z-index: 0;
+}
+
+.mainPage .main {
+  height: 100%;
+  align-items: end;
+}
+@media (max-width: 768px) {
+  .mainPage .main {
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+    gap: 50px;
+  }
+}
+
+.mainPage .image {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  z-index: 3;
+}
+.mainPage img {
+  width: 80%;
+  animation: upDown 8s infinite ease-in-out;
+}
+
+.mainPage .info p {
+  background-image: url(../../images/bg-p.png);
+  width: fit-content;
+  padding: 5px 10px;
+  color: blue;
+}
+.mainPage .info h1 {
+  font-weight: 700;
+  margin: 20px 0;
+  color: var(--TextBlue);
+}
+.mainPage .btn {
+  background-color: var(--orangeColor);
+  border: none;
+  padding: 10px 20px;
+}
+.mainPage .shape1 {
+  position: absolute;
+  width: 100px;
+  top: 75%;
+  left: 20px;
+  z-index: 5;
+  animation: upDown 8s infinite ease-in-out;
+}
+.mainPage .shape2 {
+  position: absolute;
+  width: 100px;
+  top: 30%;
+  left: 50%;
+  z-index: 5;
+  animation: upDown 8s infinite ease-in-out;
+}
+.mainPage .shape3 {
+  position: absolute;
+  width: 100px;
+  bottom: 0px;
+  left: 40%;
+  z-index: 10;
+}
+
+
+@media (max-width: 992px) {
+  .mainPage .shape1,
+  .mainPage .shape2,
+  .mainPage .shape3 {
+    display: none;
+  }
+}
+/* End main page  **********************/
+
+/* *****start How We Work***** */
+.works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.works h5 {
+  background-image: url(../../images/bg-p.png);
+  width: fit-content;
+  color: var(--orangeColor);
+  padding: 5px 10px;
+}
+.works h1 {
+  width: fit-content;
+  color: var(--TextBlue);
+  font-weight: 700;
+  margin: 30px 0 60px 0;
+}
+
+.works .cards {
+  background: url(../../images/bg-work.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .works .cards {
+    flex-direction: column;
+  }
+}
+.works .cards .cardo {
+  width: 250px;
+  height: 350px;
+  padding: 15px;
+  border: none;
+  box-shadow: 0 10px 60px 0 rgba(31, 34, 120, 0.205);
+  border-radius: 20px;
+  position: relative;
+}
+.works .cards .cardo .num {
+  -webkit-text-stroke: 2px #f17732;
+  color: transparent;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 80px;
+  margin-bottom: 30px;
+  text-shadow: 0 10px 0 #ffe3d3;
+  transition: all 0.5s;
+  z-index: 9;
+}
+.works .cards .two .num {
+  -webkit-text-stroke: 2px white;
+  text-shadow: 0 10px 0 #ffae7f;
+}
+.works .cards .cardo h3 {
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.5s;
+  z-index: 9;
+}
+.works .cards .cardo p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 15px 0;
+  transition: all 0.5s;
+  z-index: 9;
+}
+
+.works .cards .cardo .contact_btn {
+  height: fit-content;
+  align-self: start;
+  font-size: 18px;
+  padding: 10px 5px 10px 30px;
+  transition: all 0.5s;
+}
+
+.cards .two {
+  background-color: var(--orangeColor);
+  color: white;
+  transform: translateY(-20px);
+}
+@media (max-width: 768px) {
+  .works .cards .two {
+    transform: translateY(0px);
+  }
+}
+.works .cards .two .contact_btn {
+  color: var(--orangeColor);
+  background-color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  padding: 8px;
+}
+.works .cards .two .contact_btn .bi {
+  padding: 5px 8px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+  background-color: var(--orangeColor);
+  color: white;
+}
+
+.works .cards .one h3,
+.works .cards .three h3 {
+  color: var(--orangeColor);
+  transition: 0.3s;
+  z-index: 9;
+}
+.works .cards .one .contact_btn,
+.works .cards .three .contact_btn {
+  color: var(--TextBlue);
+  background-color: #cdcd;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.5s;
+  z-index: 9;
+}
+.works .cards .one .contact_btn .bi,
+.works .cards .three .contact_btn .bi {
+  padding: 5px 8px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+  background-color: var(--btnColor);
+  color: white;
+}
+
+.cards .one,
+.cards .three {
+  position: relative;
+}
+.cards .one::before,
+.cards .three::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--orangeColor);
+  z-index: -1;
+  border-radius: 20px;
+  transform: scaley(0);
+  transform-origin: top right;
+  transition: transform 0.5s ease;
+}
+.cards .one:hover::before,
+.cards .three:hover::before{
+  transform: scaley(1);
+  transform-origin: bottom right;
+  color: white;
+}
+
+
+.cards .one:hover .num,
+.cards .three:hover .num {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+  text-shadow: 0 10px 0 #fba472;
+}
+.cards .one:hover h3,
+.cards .three:hover h3 {
+  color: white;
+}
+.cards .one:hover p,
+.cards .three:hover p {
+  color: white;
+}
+.cards .one:hover .contact_btn,
+.cards .three:hover .contact_btn {
+  color: var(--orangeColor);
+  background-color: white;
+}
+.cards .contact_btn .bi {
+  transition: all 0.5s;
+}
+
+.cards .one:hover .contact_btn .bi,
+.cards .three:hover .contact_btn .bi {
+  background-color: var(--orangeColor);
+  color: white;
+}
+/* *****end How We Work***** */
+
+/* *****Start Book Appointment*****  */
+.Appointment {
+  padding: 50px 0;
+  background: url(../../images/bg-mobile.png) center;
+  background-size: cover;
+}
+
+.Appointment .book {
+  width: 40%;
+}
+
+
+.Appointment .book .Book-Appointment {
+  position: relative;
+  background-color: white;
+  padding: 40px 35px;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: 0 10px 60px 0 rgba(31, 34, 120, 0.205);
+}
+
+.Appointment .book .Book-Appointment::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid blue;
+  border-radius: 40px;
+  z-index: -1;
+}
+.Appointment .book .Book-Appointment h3 {
+  font-size: 20px;
+}
+.Appointment .book input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 10px 60px 0 rgba(31, 34, 120, 0.1);
+  font-size: 15px;
+  outline: none;
+}
+.Appointment .book Button {
+  margin-top: 15px;
+  padding: 15px 20px;
+  color: white;
+  background-color: var(--orangeColor);
+  border: none;
+}
+.Appointment .phone {
+  width: 60%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.Appointment .phone .mobile {
+  width: 70%;
+  height: 70%;
+}
+.Appointment .phone .woman {
+  position: absolute;
+  right: 15%;
+  bottom: 15px;
+  animation: rightLeft 4s infinite ease-in;
+  height: 70%;
+}
+
+.Appointment .phone .bi-gear-fill {
+  position: absolute;
+  font-size: 25px;
+  right: 39%;
+  top: 60%;
+  background-color: var(--orangeColor);
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  animation: upDown 3s infinite ease-in-out;
+}
+.Appointment .phone .bi-geo-alt-fill {
+  position: absolute;
+  font-size: 25px;
+  right: 67%;
+  top: 60%;
+  background-color: var(--btnColor);
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: white;
+  animation: upDown 4s infinite ease-in-out;
+}
+.Appointment .phone .bi-check-lg {
+  position: absolute;
+  font-size: 25px;
+  left: 15%;
+  top: 15%;
+  background-color: var(--orangeColor);
+  padding: 8px 15px;
+  border-radius: 50%;
+  color: white;
+  animation: upDown 4s infinite ease-in-out;
+}
+@media (max-width: 992px) {
+  .Appointment .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .Appointment .book {
+    width: 100%;
+  }
+  .Appointment .phone {
+    width: 100%;
+  }
+  
+  .Appointment .book .Book-Appointment {
+    height: 80%;
+    padding: 10px 15px;
+    border-radius: 15px;
+  }
+  .Appointment .book .Book-Appointment h3 {
+    font-size: 18px;
+  }
+  .Appointment .book Button {
+    font-size: 12px;
+  }
+  .Appointment .book .Book-Appointment::after {
+    border-radius: 15px;
+  }
+  .Appointment .phone .bi-check-lg,
+  .Appointment .phone .bi-geo-alt-fill,
+  .Appointment .phone .bi-gear-fill {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+}
+/* *****End Book Appointment*****  */
+/* ***** start Medical Services*****  */
+.Medical-Services {
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+.Medical-Services .container {
+  height: 70vh;
+  overflow: hidden;
+}
+@media (max-width: 376px) {
+  .Medical-Services .container {
+    height: 90vh;
+  }
+}
+.Medical-Services .Medical {
+  display: flex;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .Medical-Services .Medical {
+    flex-direction: column;
+  }
+}
+.Medical-Services .Medical .info {
+  width: 40%;
+  align-self: center;
+}
+@media (max-width: 992px) {
+  .Medical-Services .Medical .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+  }
+}
+.Medical-Services .info h6 {
+  background-image: url(../../images/bg-p.png);
+  width: fit-content;
+  padding: 5px 10px;
+  color: var(--orangeColor);
+  font-weight: 600;
+}
+.Medical-Services .info h2 {
+  color: var(--TextBlue);
+  font-size: 40px;
+  font-weight: 600;
+}
+.Medical-Services .info p {
+  font-size: 15px;
+  margin: 20px 0;
+}
+@media (max-width: 992px) {
+  .Medical-Services .info h2 {
+    color: white;
+    text-align: center;
+  }
+  .Medical-Services .info p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .Medical-Services .info h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+  }
+
+}
+@media (max-width: 376px) {
+  .Medical-Services .info h2 {
+    font-size: 25px;
+  }
+  .Medical-Services .info p {
+    font-size: 15px;
+  }
+}
+.Medical-Services .info .btn {
+  background-color: var(--orangeColor);
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  margin: 15px 0;
+}
+@media (max-width: 992px) {
+  .Medical-Services .info .btn {
+    margin: 0;
+  }
+}
+.Medical-Services .Medical .template {
+  width: 60%;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .Medical-Services .Medical .template {
+    width: 100%;
+  }
+}
+.Medical-Services .template .bg-Blue {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100%;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: var(--btnColor);
+}
+@media (max-width: 992px) {
+  .Medical-Services .template .bg-Blue {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+
+.Medical-Services .template .main-Carousel {
+  display: flex;
+  width: 60%;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 10px ;
+  overflow-x: scroll;
+}
+@media (max-width: 992px) {
+  .Medical-Services .template .main-Carousel {
+    transform: translateY(-20%);
+  }
+
+}
+/* .Medical-Services .template .main-Carousel::-webkit-scrollbar {
+width: 0;
+} */
+
+.Medical-Services .template .main-Carousel .cards {
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .Medical-Services .template .main-Carousel {
+    align-items: end;
+    justify-content: center;
+  }
+}
+
+/* ***** end Medical Services*****  */

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --TextBlue : #1f2278 ;
+    --btnColor :#565acf;
+    --orangeColor :#f17732 ;
+    --bs-navbar-active-color:#f17732 ;
+    --shadow-box : 0 10px 30px 0 rgba(0,0,0,.06);
+
+}
+@keyframes vibration {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(3px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes rightLeft {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes upDown {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  /* ****** header of page - AboutUs - Our Team - Faqs - Booking - Services - ServiceDetails **** */
+  .MainHead {
+    height: 350px;
+    width: 100%;
+    background-image: url(./images/Footer.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .MainHead h1 {
+    font-size: 50px;
+    color: var(--TextBlue);
+    margin: 20px 0;
+    font-weight: 700;
+  }
+@media (max-width:476px) {
+  .MainHead h1 {
+    font-size: 40px;
+  }
+}
+  .MainHead .btn {
+    background-color: var(--btnColor);
+    border: none;
+    padding: 8px 10px;
+  }
+  .MainHead .btn .bi-house-fill {
+    margin: 0 10px 0 0;
+  }
+  .lineHeader {
+    position: absolute;
+    left: 0;
+    top: 300px;
+    width: 100%;
+  }
+  

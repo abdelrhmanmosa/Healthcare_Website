@@ -1,0 +1,15 @@
+/* ****** Header css in index.css line 51*****  */
+
+
+/* *****our Doctor css in About.css  line 43 *****  */
+
+.cardServices{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;    
+}
+.Services .card{
+   width: 300px;
+    padding: 30px;
+    
+}

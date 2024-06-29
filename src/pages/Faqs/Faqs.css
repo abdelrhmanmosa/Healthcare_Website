@@ -1,0 +1,21 @@
+/* ****** Header css in index.css*****  */
+
+
+
+.Faqs{
+    margin: 50px 0;
+}
+.accordion-header {
+  color: white;
+}
+.accordion-item {
+  background-color: #edecec;
+  margin: 10px 0;
+}
+
+.accordion-button {
+  background-color: var(--btnColor);
+  --bs-accordion-active-color: white;
+  --bs-accordion-active-bg: #f17732;
+  color: white;
+}

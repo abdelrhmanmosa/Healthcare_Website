@@ -1,0 +1,141 @@
+/* ***** MainHead in index.css *****  */
+
+
+.BOXdata {
+  background-color: rgba(86, 90, 207, 0.1);
+  padding: 100px;
+}
+.BOXdata .row {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.BOXdata .Box {
+  position: relative;
+  background-color: white;
+  padding: 30px;
+  margin: 20px 15px;
+  width: 220px;
+  border-radius: 15px;
+}
+.BOXdata .Box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--btnColor);
+  border-radius: 15px;
+  top: -15px;
+  left: -15px;
+  z-index: -1;
+}
+.BOXdata .Box .num {
+  color: var(--orangeColor);
+  font-size: 40px;
+  font-weight: 700;
+}
+.BOXdata .Box .title {
+  color: var(--TextBlue);
+  font-weight: 700;
+}
+.BOXdata .Box .details {
+  font-size: 12px;
+  margin-top: 10px;
+}
+/* *****ourDoctor***** */
+.ourDoctor {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ourDoctor p {
+  color: var(--orangeColor);
+  font-weight: 600;
+  background-image: url(../../images/bg-p.png);
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 15px auto;
+}
+.ourDoctor h2 {
+  color: var(--TextBlue);
+  font-weight: 600;
+  margin: 15px auto;
+}
+.ourDoctor .card {
+  padding: 30px;
+  width: 305px;
+  background-color: white;
+  background-image: none;
+  border: 2px solid rgba(86, 90, 207, 0.2);
+  box-shadow: none;
+  transition: 0.5s;
+}
+.ourDoctor .card:hover {
+  border: 2px solid white;
+  box-shadow: 0 10px 60px 0 rgba(31, 34, 120, 0.205);
+}
+.ourDoctor .card .card-img {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.card-img .BGimg1,
+.card-img .BGimg2,
+.card-img .BGimg3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card-img .BGimg1 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.card-img .BGimg2 {
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 70%;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.card:hover .BGimg1,
+.card:hover .BGimg2 {
+  opacity: 1;
+}
+
+.card-img .BGimg3 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 50%;
+  top: 60px;
+  left: 60px;
+}
+.ourDoctor .card .card-body {
+  margin-top: 250px;
+}
+.ourDoctor .card .card-body .card-title {
+  color: var(--TextBlue);
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+}
+.ourDoctor .card .card-body .card-text {
+  font-size: 15px;
+  background: none;
+  margin: 15px auto;
+}
+.ourDoctor .card .card-body .social {
+  text-align: center;
+}
+.ourDoctor .card .card-body .social .bi {
+  color: white;
+  background-color: var(--btnColor);
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
